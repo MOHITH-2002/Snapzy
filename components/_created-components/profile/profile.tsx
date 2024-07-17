@@ -39,7 +39,6 @@ const Profile = async ({ username }: ProfileProps) => {
     },
   });
 
-  console.log(user);
   
 
   if (!user) {

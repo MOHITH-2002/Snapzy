@@ -5,7 +5,7 @@ import { Comments } from '../feeds/comments'
 import More from '../feeds/more'
 import Description from '../feeds/description'
 
-const Note = ({ userposts }: any) => {
+const Note = ({ sessions,userposts }: any) => {
   return (
     <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
       {userposts.map((post: any) => (
@@ -21,7 +21,7 @@ const Note = ({ userposts }: any) => {
                 <Suspense fallback="Loading...">
                   <Comments />
                 </Suspense>
-                <More />
+                <More sessions={sessions} userId={post.id}/>
               </div>
             </div>
             {/* INTERACTION */}

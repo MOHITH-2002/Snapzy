@@ -14,6 +14,7 @@ const Post = ({userposts,sessions}:any) => {
     <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-5">
       {userposts.map((post: any) => (
         post.img && (
+
           <div key={post.id} className="flex flex-col gap-4 md:p-8 xl:p-12 border-2 rounded-lg">
             {/* DESC */}
             <div className="flex flex-col gap-4">
@@ -32,7 +33,7 @@ const Post = ({userposts,sessions}:any) => {
                 <Suspense fallback="Loading...">
                   <Comments postId={post.id}  sessions={sessions}/>
                 </Suspense>
-                <More />
+                <More sessions={sessions} userId={post.id}/>
               </div>
               <Description desc={post.description} />
             </div>

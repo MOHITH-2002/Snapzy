@@ -28,7 +28,7 @@ const Toggle = ({userposts,sessions}:any) => {
         }
         {
             showPost === false &&
-            <Note userposts={userposts}/>
+            <Note sessions={sessions} userposts={userposts}/>
         }
         </>
         </>

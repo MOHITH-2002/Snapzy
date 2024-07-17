@@ -73,7 +73,7 @@ const Account = ({usersession}:props) => {
 
         
         <DropdownMenuItem className="cursor-pointer">
-            <Link href="/https://github.com/MOHITH-2002" className="flex items-center gap-1">
+            <Link href="https://github.com/MOHITH-2002" className="flex items-center gap-1">
             <MdConnectWithoutContact size={20} className="mr-2 h-4 w-4"/>
           Contact
         </Link>
