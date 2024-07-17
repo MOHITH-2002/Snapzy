@@ -29,7 +29,7 @@ const Search = ()=> {
       <span className="hidden md:flex">search</span>
     </div>
       </DialogTrigger>
-      <DialogContent className="max-w-[400px] sm:max-w-[425px] dark:bg-zinc-950 rounded-md">
+      <DialogContent className="max-w-[400px] top-1/4 md:top-1/2 sm:max-w-[425px] dark:bg-zinc-950 rounded-md">
         <DialogHeader>
           <Input placeholder="search..."  value={inputValue}
           onChange={handleInputChange} className="flex w-[95%]"/>  

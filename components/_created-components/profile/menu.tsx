@@ -95,8 +95,8 @@ const Menu = ({user, session}: any) => {
       </div>
       <div className="flex gap-5">
         <span> {user._count.posts} posts</span>
-        <span> {user._count.followers} followers</span>
-        <span> {user._count.followings} following</span>
+        <span> {user._count.followRequestsReceived} followers</span>
+        <span> {user._count.followRequestsSent} following</span>
       </div>
     </div>
   )

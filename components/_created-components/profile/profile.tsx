@@ -31,13 +31,16 @@ const Profile = async ({ username }: ProfileProps) => {
         select: {
           followings: true,
           followers: true,
+          followRequestsReceived:true,
+          followRequestsSent:true,
           posts: true,
         },
       },
     },
   });
 
-
+  console.log(user);
+  
 
   if (!user) {
     return notFound();
